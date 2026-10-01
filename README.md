@@ -6,4 +6,4 @@ Shortly, just a simple program created by me to enable High Performance Mode
 
 # Screenshot
 
-<img width="340" height="250" alt="image" src="https://github.com/user-attachments/assets/97411ec6-82ba-480f-9605-510a7de53715" />
+<img width="255" height="188" alt="image" src="https://github.com/user-attachments/assets/97411ec6-82ba-480f-9605-510a7de53715" />
