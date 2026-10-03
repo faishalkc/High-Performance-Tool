@@ -172,14 +172,3 @@ The following are potential enhancements, not features currently implemented:
 
 No license information is specified in this README. Please refer to the repository files for any applicable licensing terms.
 
----
-
-<div align="center">
-
-**High Performance Tool**
-
-*A small utility for a simple task.*
-
-Made by [faishalkc](https://github.com/faishalkc)
-
-</div>
