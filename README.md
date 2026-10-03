@@ -168,12 +168,6 @@ The following are potential enhancements, not features currently implemented:
 * Add support for additional power plans when available.
 * Package the application into a standalone Windows executable.
 
-## 👨‍💻 Author
-
-**Muhammad Faishal Hady**
-
-[![GitHub](https://img.shields.io/badge/GitHub-faishalkc-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/faishalkc)
-
 ## 📄 License
 
 No license information is specified in this README. Please refer to the repository files for any applicable licensing terms.
