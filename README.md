@@ -1,6 +1,6 @@
  <div align="center">
 
-<img src="https://github.com/user-attachments/assets/c714bb97-a392-4373-b0d2-1f3b9856ea47" alt="High Performance Tool Icon" width="120" height="120" />
+<img src="https://github.com/user-attachments/assets/7385ffa2-7d74-469d-accf-9a912fc00d97" alt="High Performance Tool Icon" width="120" height="120" />
 
 # High Performance Tool
 
@@ -45,7 +45,7 @@ Originally created as a simple personal utility, High Performance Tool focuses o
 
 ## 🖥️ Application Preview
 
-<img src="https://github.com/user-attachments/assets/c6ef3ff0-af0a-42ed-8574-1e922d6011f7" alt="High Performance Tool application interface" width="480" style="border-radius: 12px;" />
+<img src="https://github.com/user-attachments/assets/c6ef3ff0-af0a-42ed-8574-1e922d6011f7" alt="High Performance Tool application interface" width="480" />
 
 ## ⚙️ How It Works
 
