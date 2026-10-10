@@ -6,14 +6,16 @@
 
 ### A Simple Windows Power Plan Utility
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge\&logo=windows\&logoColor=white)](https://www.microsoft.com/windows)
-[![Language](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
-[![GUI](https://img.shields.io/badge/GUI-Tkinter-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/faishalkc/High-Performance-Tool)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=opentofu&logoColor=white)](https://www.microsoft.com/windows)
+[![Language](https://img.shields.io/badge/Language-Python-B08D35?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faishalkc/High-Performance-Tool)
 
-**Switch between Windows power plans with a simple graphical interface.**
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-B08D35?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
+[![Windows Power Management](https://img.shields.io/badge/Power_Management-powercfg-5C6BC0?style=flat-square&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options)
 
-A lightweight desktop utility for enabling High Performance Mode or returning to the Balanced power plan without manually navigating through Windows power settings.
+**Switch between Windows power plans with just one click.**
+
+A lightweight desktop utility for quickly switching between the High Performance and Balanced power plans through a simple graphical interface.
 
 </div>
 
@@ -21,154 +23,81 @@ A lightweight desktop utility for enabling High Performance Mode or returning to
 
 ## 📖 About
 
-High Performance Tool is a simple Windows application developed to make switching power plans more convenient.
+High Performance Tool is a Windows desktop application designed to make power plan switching more convenient.
 
-Windows provides different power plans that influence how the system manages power consumption and performance. However, accessing these settings can require navigating through several system menus.
+Instead of navigating through Windows settings, users can switch between two power plans directly from the application:
 
-This utility provides a straightforward alternative through a small graphical interface with two buttons:
+- **High Performance** — activates the High Performance power plan.
+- **Balanced** — restores the Balanced power plan.
 
-* **Enable High Performance Mode** — activates the Windows High Performance power plan.
-* **Disable High Performance Mode** — switches back to the Balanced power plan.
-
-The application uses Python and Tkinter for its graphical interface and the built-in Windows `powercfg` command-line utility to change the active power plan.
-
-Originally created as a simple personal utility, High Performance Tool focuses on one task: making power plan switching quick and accessible.
+The application uses Python, Tkinter, and Windows' built-in `powercfg` utility to perform these actions.
 
 ## ✨ Features
 
-* ⚡ **One-Click Power Plan Switching** — activate High Performance Mode directly from the application.
-* 🔄 **Restore Balanced Mode** — switch back to the Balanced power plan whenever needed.
-* 🖥️ **Simple Graphical Interface** — perform both actions without manually entering commands.
-* 🪶 **Lightweight Application** — a small Python program with a straightforward interface.
-* 🛠️ **Native Windows Integration** — uses the Windows `powercfg` utility instead of implementing a separate power management system.
-* 🎯 **Focused Functionality** — designed specifically for switching between two power plans.
+- ⚡ **One-Click Switching** — change power plans through simple buttons.
+- 🚀 **High Performance Mode** — activate the High Performance power plan.
+- ⚖️ **Balanced Mode** — switch back to the Balanced power plan.
+- 🪶 **Lightweight Interface** — a simple graphical application with minimal functionality.
+- 🪟 **Native Windows Integration** — uses the built-in `powercfg` command.
 
 ## 🖥️ Application Preview
 
 <img src="https://github.com/user-attachments/assets/c6ef3ff0-af0a-42ed-8574-1e922d6011f7" alt="High Performance Tool application interface" width="420" />
 
-## ⚙️ How It Works
-
-High Performance Tool relies on the `powercfg` command provided by Windows.
-
-When a button is clicked, the application executes the corresponding command to change the active power plan.
-
-| Action                        | Command                                                        | Purpose                                                    |
-| :---------------------------- | :------------------------------------------------------------- | :--------------------------------------------------------- |
-| Enable High Performance Mode  | `powercfg /s SCHEME_MIN`                                       | Activates the High Performance power scheme alias.         |
-| Disable High Performance Mode | `powercfg.exe /setactive 381b4222-f694-41f0-9685-ff5bb260df2e` | Activates the Balanced power plan using its standard GUID. |
-
-The application does not implement its own CPU or GPU optimization algorithm. Instead, it changes the active Windows power plan, allowing Windows to apply the settings associated with that plan.
-
-**Note:** Actual performance and power consumption depend on the hardware, Windows configuration, available power plans, and workload. Selecting High Performance Mode does not guarantee higher performance in every situation.
-
-## 📋 Requirements
-
-Before running the application, ensure that your system meets the following requirements:
-
-* **Operating System:** Microsoft Windows.
-* **Python:** Python 3 with Tkinter available, if running from source.
-* **System Utility:** The Windows `powercfg` command.
-* **Project Assets:** The application icon and banner image must be available at the paths expected by the script.
-
-The application uses Tkinter, which is commonly included with standard Python installations for Windows.
-
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Windows Executable
 
-Open a terminal and run:
+1. Visit the [GitHub Releases](https://github.com/faishalkc/High-Performance-Tool/releases) page.
+2. Download the Windows release package.
+3. Extract the downloaded archive.
+4. Double-click **`HPTool.exe`** to launch the application.
+
+### Running from Source
+
+**Requirements:**
+- Microsoft Windows
+- Python 3 with Tkinter available
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/faishalkc/High-Performance-Tool.git
-```
-
-### 2. Enter the Project Directory
-
-```bash
 cd High-Performance-Tool
 ```
 
-### 3. Check the Project Files
-
-Ensure the Python script and its required visual assets are present:
-
-```text
-High-Performance-Tool/
-├── HPTool.py
-├── banner.png
-├── icon.ico
-└── README.md
-```
-
-The Python script references `banner.png` and `icon.ico` using relative paths. Keep these files in the expected location when launching the application.
-
-### 4. Run the Application
+Run the application:
 
 ```bash
 python HPTool.py
 ```
 
-If your system uses the Python launcher, you can also try:
-
-```bash
-py HPTool.py
-```
-
-The application window should open with two buttons for switching power plans.
+Keep `banner.png` and `icon.ico` in the same directory as `HPTool.py`, as the application loads these files using relative paths.
 
 ## 🎮 How to Use
 
-| Button                            | Action                                     |
-| :-------------------------------- | :----------------------------------------- |
-| **Enable High Performance Mode**  | Activates the High Performance power plan. |
-| **Disable High Performance Mode** | Returns to the Balanced power plan.        |
-
 1. Launch High Performance Tool.
-2. Click **Enable High Performance Mode** when you want to activate the High Performance power plan.
-3. Click **Disable High Performance Mode** when you want to return to the Balanced power plan.
-4. Close the application when you are finished.
-
-The application does not currently display the active power plan or provide a confirmation message after a button is clicked.
-
-## 📂 Project Structure
-
-```text
-High-Performance-Tool/
-├── HPTool.py     # Application logic and Tkinter interface
-├── banner.png    # Application banner
-├── icon.ico      # Window icon
-└── README.md     # Project documentation
-```
+2. Click **Enable High Performance Mode** to activate the High Performance power plan.
+3. Click **Disable High Performance Mode** to return to the Balanced power plan.
+4. Close the application when finished.
 
 ## 🛠️ Technologies
 
-| Technology                                                                                                          | Purpose                                    |
-| :------------------------------------------------------------------------------------------------------------------ | :----------------------------------------- |
-| **Python**                                                                                                          | Application logic and command execution.   |
-| **Tkinter**                                                                                                         | Desktop graphical user interface.          |
-| **powercfg (Windows)**                                                                                              | Native utility for managing power schemes. |
+- **Python** — application logic.
+- **Tkinter** — graphical user interface.
+- **Windows `powercfg`** — power plan management.
 
-## ⚠️ Notes and Limitations
+## ⚠️ Notes
 
-* **Windows only:** The application depends on Windows-specific commands and is not intended for macOS or Linux.
-* **Available power plans:** The requested power scheme must be available and supported by the Windows installation.
-* **Performance expectations:** High Performance Mode changes the active power plan; it does not guarantee a measurable improvement in every application.
-* **Power consumption:** A performance-oriented power plan may increase energy consumption or heat generation, depending on the system and workload.
-* **Command feedback:** The current implementation does not display detailed success or error messages when a command fails.
-* **Python execution:** Running from source requires a compatible Python installation and the project's visual assets.
+- **Windows only:** The application uses Windows-specific functionality and is not intended for macOS or Linux.
+- **Power plan availability:** The requested power plan must be available on the system.
+- **Performance:** High Performance mode does not guarantee better performance in every workload and may increase power consumption.
+- **Command feedback:** The current version does not display success or error notifications after a power plan change.
 
-## 🔮 Possible Future Improvements
+## 📦 Releases
 
-The following are potential enhancements, not features currently implemented:
-
-* Display the currently active power plan.
-* Show success and error notifications after switching plans.
-* Detect whether the High Performance power plan is available.
-* Add support for additional power plans when available.
-* Package the application into a standalone Windows executable.
+Download the latest Windows version from the [GitHub Releases](https://github.com/faishalkc/High-Performance-Tool/releases) page.
 
 ## 📄 License
 
-No license information is specified in this README. Please refer to the repository files for any applicable licensing terms.
-
+No license information is currently specified in this repository. Unless a license is added, the default copyright rules apply.
