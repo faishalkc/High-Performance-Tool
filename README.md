@@ -1,4 +1,4 @@
- <div align="center">
+<div align="center">
 
 <img src="https://github.com/user-attachments/assets/7385ffa2-7d74-469d-accf-9a912fc00d97" alt="High Performance Tool Icon" width="120" height="120" />
 
@@ -37,11 +37,32 @@ The application uses Python, Tkinter, and Windows' built-in `powercfg` utility t
 - 🚀 **High Performance Mode** — activate the High Performance power plan.
 - ⚖️ **Balanced Mode** — switch back to the Balanced power plan.
 - 🪶 **Lightweight Interface** — a simple graphical application with minimal functionality.
-- 🪟 **Native Windows Integration** — uses the built-in `powercfg` command.
+- 🪟 **Native Windows Integration** — uses the built-in `powercfg` command and follows the Windows system font.
+- 🖼️ **Display Scaling Support** — DPI-aware, sharp on high-resolution screens, with a single `SCALE` setting to resize the whole interface.
+- 🎯 **Centered Window** — opens in the center of the desktop work area, above the taskbar.
 
 ## 🖥️ Application Preview
 
 <img src="https://github.com/user-attachments/assets/c6ef3ff0-af0a-42ed-8574-1e922d6011f7" alt="High Performance Tool application interface" width="420" />
+
+## 📂 Project Structure
+
+```text
+High-Performance-Tool/
+├── HPTool.py
+├── banner.png
+├── icon.ico
+├── requirements.txt
+└── README.md
+```
+
+| File | Description |
+|---|---|
+| `HPTool.py` | Main Python script containing the application window and power plan switching. |
+| `banner.png` | Banner image displayed at the top of the window. |
+| `icon.ico` | Application window icon. |
+| `requirements.txt` | List of third-party Python dependencies. |
+| `README.md` | Project documentation. |
 
 ## 🚀 Getting Started
 
@@ -57,6 +78,7 @@ The application uses Python, Tkinter, and Windows' built-in `powercfg` utility t
 **Requirements:**
 - Microsoft Windows
 - Python 3 with Tkinter available
+- Third-party dependencies listed in `requirements.txt`
 
 Clone the repository:
 
@@ -65,13 +87,19 @@ git clone https://github.com/faishalkc/High-Performance-Tool.git
 cd High-Performance-Tool
 ```
 
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 Run the application:
 
 ```bash
 python HPTool.py
 ```
 
-Keep `banner.png` and `icon.ico` in the same directory as `HPTool.py`, as the application loads these files using relative paths.
+Keep `banner.png` and `icon.ico` in the same directory as `HPTool.py`. The application locates these files relative to the script, so it can be launched from any working directory.
 
 ## 🎮 How to Use
 
@@ -80,10 +108,23 @@ Keep `banner.png` and `icon.ico` in the same directory as `HPTool.py`, as the ap
 3. Click **Disable High Performance Mode** to return to the Balanced power plan.
 4. Close the application when finished.
 
+## 🎨 Customization
+
+The interface size is controlled from the top of the `HPToolWindow` class in `HPTool.py`:
+
+```python
+class HPToolWindow:
+    SCALE = 1.0
+```
+
+`SCALE` resizes everything consistently: banner, fonts, buttons, spacing, and window width. For example, `1.25` makes the interface 25% larger. Individual sizes can be adjusted through the `BASE_*` constants right below it.
+
 ## 🛠️ Technologies
 
 - **Python** — application logic.
 - **Tkinter** — graphical user interface.
+- **Pillow** — banner image loading and scaling.
+- **ctypes** — Windows API access for DPI awareness and desktop work area.
 - **Windows `powercfg`** — power plan management.
 
 ## ⚠️ Notes
