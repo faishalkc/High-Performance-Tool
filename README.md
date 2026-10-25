@@ -6,12 +6,11 @@
 
 ### A Simple Windows Power Plan Utility
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=opentofu&logoColor=white)](https://www.microsoft.com/windows)
-[![Language](https://img.shields.io/badge/Language-Python-B08D35?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faishalkc/High-Performance-Tool)
-
-[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-B08D35?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
-[![Windows Power Management](https://img.shields.io/badge/Power_Management-powercfg-5C6BC0?style=flat-square&logo=square&logoColor=white)](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=opentofu&logoColor=white)
+![Language](https://img.shields.io/badge/Language-Python-B08D35?style=flat-square&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-2E8B57?style=flat-square&logo=python&logoColor=white)
+![Windows Power Management](https://img.shields.io/badge/Power_Management-powercfg-5C6BC0?style=flat-square&logo=square&logoColor=white)
+![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)
 
 **Switch between Windows power plans with just one click.**
 
