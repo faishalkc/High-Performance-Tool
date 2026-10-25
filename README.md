@@ -108,17 +108,6 @@ Keep `banner.png` and `icon.ico` in the same directory as `HPTool.py`. The appli
 3. Click **Disable High Performance Mode** to return to the Balanced power plan.
 4. Close the application when finished.
 
-## 🎨 Customization
-
-The interface size is controlled from the top of the `HPToolWindow` class in `HPTool.py`:
-
-```python
-class HPToolWindow:
-    SCALE = 1.0
-```
-
-`SCALE` resizes everything consistently: banner, fonts, buttons, spacing, and window width. For example, `1.25` makes the interface 25% larger. Individual sizes can be adjusted through the `BASE_*` constants right below it.
-
 ## 🛠️ Technologies
 
 - **Python** — application logic.
