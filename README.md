@@ -78,7 +78,7 @@ High-Performance-Tool/
 **Requirements:**
 - Microsoft Windows
 - Python 3 with Tkinter available
-- Third-party dependencies listed in `requirements.txt`
+- Pillow (dependencies listed in `requirements.txt`)
 
 Clone the repository:
 
