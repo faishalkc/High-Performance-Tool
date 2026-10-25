@@ -17,33 +17,33 @@ High-Performance-Tool/
 └── README.md
 ```
 
-The repository may also contain project documentation such as `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, and this instruction file.
+The repository may also contain documentation such as `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md`.
 
 ## Working Principles
 
-- Read the relevant project context before making changes.
+- Understand the relevant project context before making changes.
 - Inspect only the files needed for the requested task; do not scan the entire project by default.
-- Prefer a small, targeted change over broad refactoring.
+- Prefer small, targeted changes over broad refactoring.
 - Preserve existing behavior unless the task explicitly requests a behavior change.
-- Avoid adding dependencies unless they are necessary and justified.
+- Avoid adding dependencies unless necessary and justified.
 - Do not claim that tests or validation were performed unless they were actually run.
 
 ## Application Guidelines
 
 - `HPTool.py` is the main application script.
 - Preserve the existing responsibilities and style of `PowerPlan` and `HPToolWindow`.
-- Keep the UI based on Tkinter unless the requested task calls for a different approach.
+- Keep the interface based on Tkinter unless the task calls for a different approach.
 - Treat `powercfg` interactions as Windows-specific. Handle command errors and unexpected output sensibly.
 - Do not assume Windows-specific behavior can be validated in a non-Windows environment.
-- Keep `banner.png` and `icon.ico` compatible with the app's existing asset-loading paths.
-- Avoid changing power-plan behavior, command arguments, or system settings beyond the scope of the request.
+- Keep `banner.png` and `icon.ico` compatible with the existing asset-loading paths.
+- Avoid changing power-plan behavior, command arguments, or system settings beyond the requested scope.
 
 ## Dependencies and Compatibility
 
-- Check `requirements.txt` before introducing or changing third-party dependencies.
-- Prefer Python standard-library features when practical.
+- Check `requirements.txt` before adding or changing third-party dependencies.
+- Prefer standard-library features when practical.
 - Keep changes compatible with the project's intended Windows environment.
-- Do not add platform support claims unless the application has actually been adapted and verified for those platforms.
+- Do not claim support for other platforms unless the application has been adapted and verified.
 
 ## Documentation
 
@@ -55,10 +55,10 @@ The repository may also contain project documentation such as `LICENSE`, `CONTRI
 
 When relevant and available:
 
-- Run a syntax check or other focused validation.
+- Run a syntax check or focused validation.
 - Launch the application on Windows to check UI behavior.
 - Verify the relevant power-plan operation and error handling.
-- Report what was and was not tested clearly.
+- Clearly report what was and was not tested.
 
 ## Git and Scope
 
