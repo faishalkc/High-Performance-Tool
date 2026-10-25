@@ -53,16 +53,18 @@ High-Performance-Tool/
 ├── banner.png
 ├── icon.ico
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
 | File | Description |
 |---|---|
-| `HPTool.py` | Main Python script containing the application window and power plan switching. |
-| `banner.png` | Banner image displayed at the top of the window. |
+| `HPTool.py` | Main Python script containing the application window and power plan switching functionality. |
+| `banner.png` | Banner image displayed at the top of the application window. |
 | `icon.ico` | Application window icon. |
 | `requirements.txt` | List of third-party Python dependencies. |
-| `README.md` | Project documentation. |
+| `.gitignore` | Specifies files and directories that Git should ignore, such as Python cache files and virtual environments. |
+| `README.md` | Project documentation, including installation instructions and usage information. |
 
 ## 🚀 Getting Started
 
@@ -123,10 +125,8 @@ Keep `banner.png` and `icon.ico` in the same directory as `HPTool.py`. The appli
 - **Performance:** High Performance mode does not guarantee better performance in every workload and may increase power consumption.
 - **Command feedback:** The current version does not display success or error notifications after a power plan change.
 
-## 📦 Releases
-
-Download the latest Windows version from the [GitHub Releases](https://github.com/faishalkc/High-Performance-Tool/releases) page.
-
 ## 📄 License
 
-No license information is currently specified in this repository. Unless a license is added, the default copyright rules apply.
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, modify, and distribute this software in accordance with the terms of the license.
